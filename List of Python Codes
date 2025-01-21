@@ -1,0 +1,161 @@
+1) 
+my_variable = "Hello, world!"
+print(my_variable)
+
+Output:  
+Hello, world!
+
+2) 
+fruits = ["apple","banana","cherry"]
+x,y,z = fruits
+  print(x)
+  print(y)
+  print(z)
+Output: 
+apple
+banana
+cherry
+
+3) 
+x ="Python is awesome"
+   print(x)
+
+Output: 
+Python is awesome
+
+4) 
+x ="Python"
+y ="is"
+z ="awesome"
+  print(x, y, z)
+
+Output: 
+Python is awesome
+
+5) 
+x=5
+   y=10
+   print(x + y)
+Output: 
+15
+
+6) 
+x=7
+   y="Dhoni"
+   print(x, y)
+Output: 
+7 Dhoni
+
+7) x=7
+   y="Dhoni"
+   print(x + y)
+Output: Error
+
+8) 
+x ="awesome"
+   def myfunc() :
+     print("The Python is " + x)
+   myfunc()
+Output: 
+The Python is awesome
+
+9) 
+x ="awesome"
+
+   def myfunc():
+     x ="fantastic"
+     print("Python is " + x)
+
+   myfunc()
+   print("Python is " + x)
+Output: 
+Python is fantastic
+        Python is awesome
+
+10) 
+def myfunc():
+     global x
+     x = "fantastic"
+
+   myfunc()
+
+   print("Python is " + x)
+
+Output: 
+Python is fantastic
+
+11) 
+x = "awesome"
+
+   def myfunc():
+     global x
+     x ="fantastic"
+
+   myfunc()
+
+   print("Python is " + x)
+
+Output:
+Python is fantastic
+
+12) 
+x =5
+   print(type(x))
+
+   x = "Hello World"
+   print(x)
+   print(type(x))
+
+Output: 
+<class 'int'>
+        Hello World
+        <class 'str'>
+
+13) 
+x = ["apple", "banana", "cherry"]
+print(type(x))
+x = "Hello World"
+print(type(x))
+x = 20
+print(type(x))
+x = 20.5
+print(type(x))
+x = 1j
+print(type(x))
+x = ("apple", "banana", "cherry")
+print(type(x))
+x = range(6)
+print(type(x))
+x = {"name" : "John", "age" : 36}
+print(type(x))
+x = {"apple", "banana", "cherry"}
+print(type(x))
+x = frozenset({"apple", "banana", "cherry"})
+print(type(x))
+x = True
+print(type(x))
+x = b"Hello"
+print(type(x))
+x = bytearray(5)
+print(type(x))
+x = memoryview(bytes(5))
+print(type(x))
+x = None
+print(type(x))
+
+Output: 
+<class 'list'>
+<class 'str'>
+<class 'int'>
+<class 'float'>
+<class 'complex'>
+<class 'tuple'>
+<class 'range'>
+<class 'dict'>
+<class 'set'>
+<class 'frozenset'>
+<class 'bool'>
+<class 'bytes'>
+<class 'bytearray'>
+<class 'memoryview'>
+<class 'NoneType'>
