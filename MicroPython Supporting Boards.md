@@ -161,5 +161,3 @@ Let's make MicroPython accessible to everyone 🐍✨
 If this helped you, star ⭐ the repo and spread the word!
 
 ---
-
-Let me know if you'd like this converted into a template or auto-generated format for easier updates in the future!
