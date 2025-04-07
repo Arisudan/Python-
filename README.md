@@ -1,8 +1,3 @@
-Here’s a clean, professional, and easy-to-understand `README.md` file content tailored to your GUI-based calculator projects using Python and Tkinter:
-
----
-
-```markdown
 # GUI Calculator Projects Using Python and Tkinter
 
 This repository contains beginner-friendly projects that demonstrate how to create basic graphical user interfaces using Python and the Tkinter library. The primary focus is on building a functional calculator that allows users to perform arithmetic operations using button inputs.
