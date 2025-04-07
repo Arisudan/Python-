@@ -45,11 +45,9 @@ This is a great starting point for anyone new to Python GUI development.
 To download the project files, use the following commands in your terminal:
 
 ```bash
-git clone https://github.com/your-username/gui-calculator-python.git
-cd gui-calculator-python
+git clone https://github.com/Arisudan/python-.git
+cd python-
 ```
-
-Replace `your-username` with your actual GitHub username.
 
 ### 2. Run the Calculator Application
 
