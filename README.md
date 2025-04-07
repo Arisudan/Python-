@@ -63,7 +63,7 @@ This will open a basic calculator window where you can perform operations using 
 
 ## File Description
 
-- `simple_calculator.py`  
+- `Basic_Calculator.py`  
   This file contains the Python code for the calculator interface. It uses Tkinter to render the window, buttons, and display logic for evaluating basic arithmetic expressions.
 
 ---
