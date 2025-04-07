@@ -96,6 +96,100 @@ This will open a basic calculator window where you can perform operations using 
 
 ---
 
+# EMI Home Loan Calculator – Python GUI Application
+
+This project is a simple graphical user interface application developed in Python using Tkinter. It estimates an approximate monthly EMI (Equated Monthly Installment) for a home loan based on user input for total loan amount and loan duration. This tool is primarily designed for demonstration and learning purposes.
+
+---
+
+## Features
+
+- Clean and interactive GUI using Tkinter
+- User input for:
+  - Number of years for the loan
+  - Total loan amount
+- EMI calculated using a simplified formula
+- Displays a financial note: **"AVOID EMI"**
+- Easy-to-understand and minimal design
+
+---
+
+## How to Run the Application
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/Arisudan/EMI_Home_Loan_Calculator.git
+cd EMI_Home_Loan_Calculator
+```
+
+### Step 2: Run the Python Script
+
+```bash
+python EMI_Home_Loan.py
+```
+
+This will open a window with a button labeled **"EMI for home loan"**.
+
+---
+
+## How to Use
+
+1. Click on **"EMI for home loan"** in the GUI.
+2. Enter the **loan duration** in years when prompted.
+3. Enter the **total loan amount** when prompted.
+4. The program prints an approximate EMI value in the terminal along with the message: **"AVOID EMI"**.
+
+---
+
+## EMI Formula Used
+
+```text
+EMI = (Loan Amount / (Years * 12)) + 0.85 * (Loan Amount / (Years * 12))
+```
+
+Note: This is a simplified calculation and does not account for real-world interest rates.
+
+---
+
+## File Description
+
+- `EMI_Home_Loan.py`  
+  Main Python script containing the logic and interface code using Tkinter.
+
+---
+
+## Source Code: EMI_Home_Loan.py
+
+```python
+from tkinter.simpledialog import askinteger
+from tkinter import *
+from tkinter import messagebox
+
+top = Tk()
+top.geometry("200x200")
+
+def show():
+   num = askinteger("Input", "Enter no. of years")
+   amt = askinteger("Input", "Enter total amount")
+   print((amt / (num * 12)) + 0.85 * (amt / (num * 12)))
+   print("AVOID EMI")
+
+B = Button(top, text="EMI for home loan", command=show)
+B.place(x=50, y=50)
+
+top.mainloop()
+```
+
+---
+
+## Notes
+
+- Results are printed in the terminal. For better user experience, output can be redirected to the GUI using message boxes or text labels.
+- The EMI formula used is intended for educational purposes only and does not reflect actual bank EMI calculations.
+
+---
+
 ## License
 
 This project is open-source and licensed under the MIT License.
