@@ -54,7 +54,7 @@ cd python-
 Make sure you're in the project directory, then run:
 
 ```bash
-python simple_calculator.py
+Basic_Calculator.py
 ```
 
 This will open a basic calculator window where you can perform operations using the on-screen buttons.
