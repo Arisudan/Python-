@@ -124,14 +124,14 @@ This project is a simple graphical user interface application developed in Pytho
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/Arisudan/EMI_Home_Loan_Calculator.git
-cd EMI_Home_Loan_Calculator
+git clone https://github.com/Arisudan/Python-.git
+cd Python-
 ```
 
 ### Step 2: Run the Python Script
 
 ```bash
-python EMI_Home_Loan.py
+python EMI_Home _Loan.py
 ```
 
 This will open a window with a button labeled **"EMI for home loan"**.
