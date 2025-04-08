@@ -339,5 +339,5 @@ This project is open-source and licensed under the MIT License.
 
 ---
 
-### Author: [ARISUDAN TH]
-GitHub: [https://github.com/Arisudan]
+### Author: ARISUDAN TH
+GitHub: https://github.com/Arisudan
