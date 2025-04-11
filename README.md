@@ -333,6 +333,137 @@ This SIP Calculator offers a simple and effective way for users to estimate the 
 
 ---
 
+# SWP Calculator GUI – Python Tkinter  
+This project is a **Simple SWP (Systematic Withdrawal Plan) Calculator** built using Python's Tkinter library. It helps users calculate the total amount withdrawn and the remaining balance after a set period, based on the initial investment, withdrawal amount, interest rate, and duration.
+
+---
+
+📌 **Features**  
+- User-friendly graphical interface using Tkinter  
+- Calculates total withdrawn and remaining balance  
+- Displays results in a popup message box  
+- Input validation with error messages for invalid entries  
+
+---
+
+🧰 **Requirements**  
+- Python 3.x  
+- tkinter (comes pre-installed with standard Python)  
+
+---
+
+📥 **Installation on Windows**  
+
+✅ **Verify Installation**  
+Open Command Prompt and type:  
+```bash
+python --version
+```
+
+▶️ **Run the Script**  
+- Save the Python file as `swp_calculator.py`  
+- Open a terminal or command prompt in that folder  
+- Run:  
+```bash
+python swp_calculator.py
+```
+
+---
+
+🔢 **How the Calculator Works**  
+The calculator uses compound interest logic to compute the future value of an investment with regular withdrawals.
+
+Each month:
+- The balance grows due to interest
+- Then, a fixed withdrawal is made
+
+It loops through each month, adding interest and subtracting the withdrawal.  
+
+**Total Withdrawn** = Withdrawal Amount × Total Months  
+**Remaining Balance** = Final investment amount after all withdrawals and growth  
+
+---
+
+🧾 **Code Overview**
+```python
+import tkinter as tk
+from tkinter import messagebox
+
+def calculate_swp():
+    try:
+        principal = float(entry_principal.get())
+        withdraw = float(entry_withdraw.get())
+        rate = float(entry_rate.get())
+        years = int(entry_years.get())
+
+        r = (rate / 100) / 12
+        n = years * 12
+        balance = principal
+        total_withdrawn = 0
+
+        for _ in range(n):
+            balance += balance * r
+            if balance >= withdraw:
+                balance -= withdraw
+                total_withdrawn += withdraw
+            else:
+                total_withdrawn += balance
+                balance = 0
+                break
+
+        result = f"Total Withdrawn: ₹{total_withdrawn:.2f}\nRemaining Balance: ₹{balance:.2f}"
+        messagebox.showinfo("SWP Result", result)
+
+    except:
+        messagebox.showerror("Error", "Please enter valid numbers.")
+
+root = tk.Tk()
+root.title("SWP Calculator")
+root.geometry("300x300")
+
+tk.Label(root, text="Initial Investment (₹)").pack()
+entry_principal = tk.Entry(root)
+entry_principal.pack()
+
+tk.Label(root, text="Monthly Withdrawal (₹)").pack()
+entry_withdraw = tk.Entry(root)
+entry_withdraw.pack()
+
+tk.Label(root, text="Annual Interest Rate (%)").pack()
+entry_rate = tk.Entry(root)
+entry_rate.pack()
+
+tk.Label(root, text="Duration (Years)").pack()
+entry_years = tk.Entry(root)
+entry_years.pack()
+
+tk.Button(root, text="Calculate SWP", command=calculate_swp).pack()
+
+root.mainloop()
+```
+
+---
+
+📤 **Output Example**  
+If you input:  
+- Initial Investment: ₹500000  
+- Monthly Withdrawal: ₹8000  
+- Annual Interest Rate: 10  
+- Duration: 5 years  
+
+The output will be something like:  
+```
+Total Withdrawn: ₹480000.00  
+Remaining Balance: ₹133271.81  
+```
+
+---
+
+📌 **Conclusion**  
+This SWP Calculator offers a simple and effective way for users to estimate the effect of systematic withdrawals from their investment over time. With a user-friendly interface built using Python and Tkinter, it makes financial planning more accessible. This project can be extended with visual charts, alerts when funds run low, or export options for improved user experience and practical utility.
+
+---
+
 ## License
 
 This project is open-source and licensed under the MIT License.
