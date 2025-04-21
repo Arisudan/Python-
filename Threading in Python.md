@@ -151,16 +151,3 @@ All tasks completed in 3.0 seconds.
 Multi-threading is highly beneficial when your tasks are **independent and time-consuming**, like waiting for a response, I/O, or delays.
 
 ---
-
-###  Contributions
-
-Feel free to fork and experiment with `asyncio`, multiprocessing, or I/O-based tasks!
-
----
-
-###  License
-
-MIT License
-```
-
----
